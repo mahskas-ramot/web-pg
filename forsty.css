@@ -1,0 +1,30 @@
+*
+{  
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background: linear-gradient(#f6fafa,#a0fce6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+section img#frm
+{  
+    width: 100%;
+    min-height: 1;
+    background-position: 20px;
+    left: auto;
+    right: auto;
+    height: auto;
+    padding: 0px;
+    opacity: 80%;
+
+}
+

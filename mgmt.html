@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crater</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="imf/CRATER.png" alt="error">
+        </a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="about.html" class="about">Sales</a></li>
+            <li><a href="#" class="contact">Contact</a></li>
+            <li><a href="register.html" class="info">Employee</a></li>          
+            <li class="hell"><input type="text" placeholder="Search"></li>
+        </ul>
+    </header>
+    <section>
+  <!-- <img src="imf/stars.png" id="stars"> -->
+       <img src="imf/circle.png" id="circle">
+       <img src="imf/first.png" id="first">
+       <img src="imf/second.png" id="second">
+       <img src="imf/third.png" id="third">
+       <img src="imf/fourth.png" id="fourth">
+       <h2 id="text">CRATER</h2>
+       <a href="login.html" id="btn">Login
+       </a>
+       
+
+    </section>
+    <div class="sec" id="sec">
+       <h2>Info</h2>
+       <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa illum provident, nemo accusantium quos nulla eveniet ab.   Consequatur ipsa, laboriosam, suscipit molestiae accusamus soluta voluptates dolorum doloribus nesciunt voluptatum numquam pariatur  corporis aspernatur, maxime qui aut. Iste facere ad illo voluptate quidem molestias quod impedit quam ducimus hic officiis eveniet  qui magni laboriosam, similique, fuga id blanditiis explicabo dicta repudiandae ex ullam consequatur? Impedit nesciunt fuga at  soluta temporibus similique recusandae illo excepturi nobis omnis aliquid deleniti, voluptate, nam necessitatibus? Labore  laudantium aliquid recusandae ducimus! Quia, doloremque voluptatem nulla sint labore ut commodi aliquid quaerat velit, recusandae  praesentium? Repellat ab neque quidem omnis et nobis enim, perspiciatis, quo culpa, commodi id officiis ducimus possimus fuga  facere? Deleniti est minima hic! Fugiat, ratione! Cumque qui optio doloremque molestias praesentium pariatur libero porro magni  eveniet esse ducimus veritatis maxime rerum,<br><br> facere laboriosam laudantium impedit alias nihil. Eaque officia soluta at  exercitationem deserunt cupiditate minima error minus! Ut numquam sapiente ex doloribus. Corporis, cumque. Numquam exercitationem  vel nesciunt at itaque blanditiis reprehenderit esse soluta officiis totam error maxime voluptatem, debitis sapiente sed,  perspiciatis similique. Maxime animi, enim totam quo consequatur dolorem distinctio consequuntur deleniti fugiat quas aliquam sit  id! Doloremque eos eveniet ducimus temporibus sit <br><br>brcorrupti quae explicabo! Illum est et sit aliquam minima. Quidem autem  fuga quas quod maxime debitis quibusdam assumenda nostrum quam nam, asperiores illo quos? Aspernatur nisi quidem recusandae ipsum  sequi quos eveniet voluptatum qui fugit, sunt rerum molestias! Et voluptatem aspernatur iure perferendis? Incidunt in eum  exercitationem assumenda, dolorum voluptatem dicta eaque<br><br> eligendi blanditiis veritatis nihil. Distinctio quisquam quo sit  harum voluptate debitis laborum optio nobis atque voluptatum temporibus odit dicta architecto, deserunt, illum sequi ab assumenda  consequuntur necessitatibus repellendus ex. Eos rem sapiente maxime natus ut at perspiciatis repudiandae laudantium tempora,  perferendis voluptatibus quod itaque velit reiciendis.
+        </p> 
+    </div>
+    <section>
+        <video class="vid" autoplay loop muted plays-inline>
+            <source src="hack.mp4" type="video/mp4">
+        </video>
+   
+    </section>
+   
+    <footer>
+        <h1>hello</h1>
+    </footer>
+    <script>
+    //  let stars = document.getElementById('stars'); 
+        //let circle = document.getElementById('circle'); 
+        let first = document.getElementById('first');
+        let second = document.getElementById('second');
+        let third = document.getElementById('third');
+        let fourth = document.getElementById('fourth');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+        
+
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+           // stars.style.left = value * 0.25 + 'px';
+            circle.style.top = value * 0.17 + 'px';
+            first.style.top = value * 0.75 + 'px';
+            second.style.top = value * 1.05 + 'px';
+            third.style.top = value * 6 + 'px';
+            fourth.style.top = value * 0.50 + 'px';
+            text.style.marginRight = value * .5 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>     
+    <?php
+    $server_name="localhost";
+    $username="root";
+    $password="";
+    $database_name="database123";
+    
+    $conn=mysqli_connect($server_name,$username,$password,$database_name);
+    //now check the connection
+    if(!$conn)
+    {
+        die("Connection Failed:" . mysqli_connect_error());
+    
+    }
+    
+    if(isset($_POST['save']))
+    {	
+         $first_name = $_POST['first_name'];
+         $last_name = $_POST['last_name'];
+         $gender = $_POST['gender'];
+         $email = $_POST['email'];
+         $phone = $_POST['phone'];
+    
+         $sql_query = "INSERT INTO entry_details (first_name,last_name,gender,email,mobile)
+         VALUES ('$first_name','$last_name','$gender','$email','$phone')";
+    
+         if (mysqli_query($conn, $sql_query)) 
+         {
+            echo "New Details Entry inserted successfully !";
+         } 
+         else
+         {
+            echo "Error: " . $sql . "" . mysqli_error($conn);
+         }
+         mysqli_close($conn);
+    }
+    ?>
+    
+</body>
+</html>

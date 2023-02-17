@@ -1,0 +1,254 @@
+*
+{   
+    margin-top: 0;
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#f6fafa,#a0fce6);
+    
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: o;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    z-index: 1000;
+    
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b8eee1;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    padding-right: 21px;
+}
+header ul li
+{
+    list-style: none;
+    margin-Left: 20px;
+
+}
+header ul li a
+{
+    cursor: url("imf/cursorw.png"), auto;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    
+    background: #fff;
+    color: #7f788a;
+    
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#5fb89d,transparent);
+    z-index: 1000;
+
+
+}
+section img
+{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+section img#first
+{
+    mix-blend-mode: screen;
+    z-index: -1000;
+
+
+    
+}
+section img#circle
+{
+    max-width: 44%;
+    left: auto;
+    height: auto;
+    padding: 0px;
+    padding-top: 50px;
+    opacity: 70%;  
+}
+#text
+{
+    position: absolute;
+    bottom: 250px;
+    color: #bfbbbb;
+    white-space: nowrap;
+    padding: 0,50px;
+    font-size: 7.5vw;
+    z-index: 9;
+
+
+}
+#btn 
+{
+    text-decoration: none;
+    cursor: url("imf/cursorw.png") ,auto;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    color: #5fb89d;
+    background: #fdfdfd;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+    
+
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #a0fce6;
+    text-align: left;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.sec p
+{
+  
+    font-size: 1.2em;
+    color: #ffffff;  
+    text-align: left;
+}
+.logo img{
+    opacity: 60%;
+}
+.hell input[type=text]
+{
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 40px;
+    background: #89d7c0;
+    border: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    outline: none;
+    color: #fdfdfd;
+    
+}
+.hell input[type=text]:hover,
+.hell input[type=text].active
+{
+    color: #f6fafa;
+    border: 3px solid #ccc;
+   -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;  
+    
+    
+}
+.hell input[type=text]::placeholder
+{
+    text-align: center;
+}
+.hell input[type=text]:focus
+{
+    border: solid rgb(245, 197, 191);
+    
+}
+.vid
+{
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 80%;
+}
+@media (min-aspect-ratio: 16/9){
+    .vid{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .vid{
+        width: auto;
+        height: 100%;
+    }
+}
+.right-col
+{
+    float: right;
+    margin-right: 6%;
+    display: flex;
+    margin-top: 120px;
+    align-items: center;
+
+}
+.right-col p
+{
+    font-size: 18px;
+    color: #7f788a;
+    font-weight: 400;
+    margin-right: 15px;
+
+
+}
+#icon
+{
+    width: 100px;
+    height: auto; /*to manipulate the size of an image*/
+    display: block;
+    left: 1700px;
+    top: 700px;
+    cursor: pointer;
+
+
+}

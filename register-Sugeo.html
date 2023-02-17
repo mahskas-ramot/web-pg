@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://font.googleapis.com/css2?family=Poppins:wgt@300;400;500;600;700;800;900&display=swap');
+        *
+        {
+             margin: 0;
+             box-sizing: border-box;
+             padding: 0;
+             font-family: 'Poppins' , sans-serif;
+        }
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            gap: 30px;
+            background: #6cf1f1;
+            
+        }
+        .search
+        {
+            position: relative;
+            width: 250px;
+
+        }
+        .search input
+        {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgba(255,255,255,0.25);
+            background: #1d2b3a;
+            border-radius: 5px;
+            outline: none;
+            color: aliceblue;
+            font-size: 1em;
+            transition: 0.5s;
+        } 
+         .search span
+         {
+            position: absolute;
+            left: 0;
+            padding: 10px;
+            pointer-events: none;
+            font-size: 1em;
+            color: rgba(255,255,255,0.25);
+            text-transform: uppercase;
+            transition: 0.5s;
+         }
+        .search input:valid ~ span,
+        .search input:focus ~ span
+        {
+            color: #6cf1f1;
+            transform: translateX(10px) translateY(-7px);
+            font-size: 0.65em;
+            padding: 0 10px;
+            background: #1d2b3a;
+            border-left: 1px solid #00dfc4;
+            border-right: 1px solid #00dfc4;
+            letter-spacing: 0.2em;
+
+          
+        }
+        
+        .search:nth-child(2) input:valid ~ span,
+        .search:nth-child(3) input:focus ~ span
+        {
+              background: #00dfc4;
+              color: #1d2b3a;
+              border-radius: 2px;
+        }
+        .search input:valid,
+        .search input:focus 
+        {
+         border: 1px solid rgba(255,255,255,0.25);
+        }  
+        h1{
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 700;
+            padding: 20px;
+            background: #1d2b3a;
+            border-radius: 16px;
+            color: rgb(173, 204, 206);
+        }
+        img.cr
+        {
+            margin-right: 100px;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <img src="imf/CRATER.png" alt="" id="cr">
+    <h1>Employee Form</h1>
+    <div class="search">
+        <input type="text" required ="required">
+        <span>First name</span>
+    </div>
+    
+    <div class="search">
+        <input type="text" required ="required">
+        <span>Last name name</span>
+    </div>
+    <div class="search">
+        <input type="text" required ="required">
+        <span>Employee ID</span>
+    </div>
+    <div class="search">
+        <input type="text" required ="required">
+        <span>Date</span>
+    </div>
+    
+
+
+    <? echo
+
+    
+</body>
+</html>
